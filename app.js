@@ -68,7 +68,7 @@ function displayResult(weather) {
     });
 
     const celFerCon = document.querySelector('.celFerCon');
-    celFerCon.innerHTML = `<button class="celFer">To F&#176</button>`;
+    celFerCon.innerHTML = `<button class="celFer">To &#176F</button>`;
     const celFer = document.querySelector('.celFerCon .celFer');
     celFer.addEventListener('click', function() {
             cast();
@@ -101,11 +101,11 @@ function cast() {
         max.innerText = Math.round(maxi);
     });
 
-    document.querySelector('.celFerCon .celFer').innerHTML = `To ${sign}&#176`
+    document.querySelector('.celFerCon .celFer').innerHTML = `To &#176${sign}`
     sign === 'C' ? sign = 'F' : sign = 'C';
 
     document.querySelectorAll('span')
     .forEach((elem) => {
-        elem.innerText =  `${sign}`
+        elem.innerHTML =  `&#176${sign}`
     });
 }

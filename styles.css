@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-image: url("./images/cloudsImage.jpg");
   background-size: cover;
   background-position: top center;
@@ -28,13 +28,17 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 15px 15px;
+}
+
+section .city {
+  margin-top: 40px;
 }
 
 header input {
   width: 100%;
   max-width: 280px;
   padding: 10px 15px;
+  margin-top: 50px;
   border: none;
   outline: none;
   background-color: rgba(255, 255, 255, 0.616);
@@ -74,12 +78,12 @@ header input:focus {
 }
 
 .location .city {
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-size: 35px;
-  font-weight: 300;
-  margin-bottom: 5px;
+  font-weight: 400;
+  margin-bottom: 3px;
   font-weight: 600;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 
 .card .date,
@@ -153,6 +157,7 @@ header input:focus {
   flex-basis: 100%;
   border: none;
   background-image: none;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
