@@ -78,12 +78,12 @@ header input:focus {
 }
 
 .location .city {
-  color: rgb(255, 255, 255);
+  color: rgb(239, 255, 232);
   font-size: 35px;
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: 3px;
-  font-weight: 600;
   padding-bottom: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .card .date,
@@ -135,7 +135,7 @@ header input:focus {
   background-color: rgb(43, 39, 39);
   color: white;
   padding: 1% 2.5%;
-  margin: 40px;
+  margin: 35px;
   cursor: pointer;
   font-size: 18px;
   border-radius: 40px;
@@ -150,7 +150,7 @@ header input:focus {
 }
 
 .card .icon img {
-  width: 70px;
+  width: 60px;
 }
 
 #i0 {
@@ -162,11 +162,23 @@ header input:focus {
 }
 
 #i0 .dayName {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 #i0 .date {
-  font-size: 18px;
+  font-size: 16px;
+}
+
+#i0 .hi-low,
+#i0 .current .weather,
+#i0 .current .temp,
+.current span {
+  font-size: 20px;
+}
+
+#i0 .current .temp,
+.current span {
+  font-size: 25px;
 }
 
 /**Desktop Query*/

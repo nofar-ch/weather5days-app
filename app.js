@@ -48,7 +48,7 @@ function displayResult(weather) {
             max: item.main.temp_max
         }
         const content = `<div class="card" id='i${i}'>
-                            <div class="dayName">${(days[(day.getDay() + i) % DAYS_NUM])}</div>
+                            <div class="dayName">${(days[(0) % DAYS_NUM])}</div>
                             <div class="date">${dayWeather.date}</div>
                             <div class="icon"><img src="http://openweathermap.org/img/wn/${dayWeather.icon}@2x.png"/></div>
                             <div class="current">
