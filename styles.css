@@ -103,7 +103,7 @@ header input:focus {
   color: #fff;
   font-size: 40px;
   font-weight: 600;
-  text-shadow: 2px 8px rgba(0, 0, 0, 0.65);
+  text-shadow: 2px 5px rgba(0, 0, 0, 0.65);
   display: inline-block;
 }
 
@@ -223,10 +223,7 @@ header input:focus {
   .card .date {
     font-size: 8px;
   }
-  #i0 .hi-low,
-  #i0 .current .weather,
-  #i0 .current .temp,
-  #i0 .current span {
+  #i0 .current .weather {
     font-size: 20px;
   }
 
@@ -234,10 +231,14 @@ header input:focus {
   #i0 .current span {
     font-size: 25px;
   }
+  #i0 .hi-low,
+  #i0 .hi-low span {
+    font-size: 15px;
+  }
   #i0 .dayName {
     font-size: 22px;
   }
   #i0 .date {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
