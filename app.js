@@ -30,15 +30,16 @@ function getResult(query) {
 
 function displayResult(weather) {
     dayCards.innerHTML = "";
-    let i = 0;
-    weather.list.filter(element => element.dt_txt.includes('12:00:00')).map(item => {
+    let index = 0;
+    for (let i = 0; i < weather.list.length; i = i+8) {
+    let item = weather.list[i];
+        console.log(item)
         let city = document.querySelector('.location .city');
 
         const day = new Date();
         city.innerText = `${weather.city.name}, ${weather.city.country}`; 
         
         const dayWeather = {
-            day: null,
             date: item.dt_txt,
             des: item.weather[0].description,
             icon: item.weather[0].icon,
@@ -48,7 +49,7 @@ function displayResult(weather) {
             max: item.main.temp_max
         }
         const content = `<div class="card" id='i${i}'>
-                            <div class="dayName">${(days[(0) % DAYS_NUM])}</div>
+                            <div class="dayName">${(days[(day.getDay() + index) % DAYS_NUM])}</div>
                             <div class="date">${dayWeather.date}</div>
                             <div class="icon"><img src="http://openweathermap.org/img/wn/${dayWeather.icon}@2x.png"/></div>
                             <div class="current">
@@ -63,9 +64,9 @@ function displayResult(weather) {
                             </div>
                             <div class="celFer"></div>
                         </div>`;
-        i++;    
+        index++;    
         dayCards.innerHTML += content;
-    });
+    }
 
     const celFerCon = document.querySelector('.celFerCon');
     celFerCon.innerHTML = `<button class="celFer">To &#176F</button>`;

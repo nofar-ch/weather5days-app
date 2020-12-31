@@ -79,7 +79,7 @@ header input:focus {
 
 .location .city {
   color: rgb(239, 255, 232);
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 700;
   margin-bottom: 3px;
   padding-bottom: 5px;
@@ -89,7 +89,7 @@ header input:focus {
 .card .date,
 .card .dayName {
   color: #fff;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
 }
 
