@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montserrat", cursive;
+  background-image: url("./images/cloudsImage.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+  /* full height */
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.096),
+    rgba(0, 0, 0, 0.767)
+  );
+}
+
+header,
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 15px;
+}
+
+header input {
+  width: 100%;
+  max-width: 280px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.616);
+  border-radius: 16px 0px 16px 0px;
+  border-bottom: 3px solid rgb(1, 202, 18);
+  color: #313131;
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.2s ease-out;
+}
+
+header input:focus {
+  background-color: rgb(224, 224, 224);
+}
+
+.day-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  text-align: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  text-align: center;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(146, 140, 140, 0.527),
+    rgba(58, 56, 56, 0.822)
+  );
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 16px;
+  padding: 1% 1%;
+  margin-bottom: 5px;
+}
+
+.location .city {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 300;
+  margin-bottom: 5px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.card .date,
+.card .dayName {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.card .dayName {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.current .temp,
+.current span {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  text-shadow: 2px 8px rgba(0, 0, 0, 0.65);
+  display: inline-block;
+}
+
+.current .weather {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-shadow: 0px 3px rgb(0, 0, 0, 0.4);
+}
+
+.current .hi-low .min,
+.current .hi-low .max {
+  display: inline;
+}
+
+.current .hi-low,
+.current .hi-low span {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  text-shadow: 0px 3px rgb(0, 0, 0, 0.4);
+}
+.celFerCon {
+  text-align: center;
+  margin-top: 20px;
+}
+.celFerCon .celFer {
+  background-color: rgb(43, 39, 39);
+  color: white;
+  padding: 1% 2.5%;
+  margin: 80px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 40px;
+  outline: none;
+  border: 1px solid #919191;
+}
+
+.celFerCon .celFer:hover {
+  background-color: rgb(105, 105, 105);
+  color: white;
+  cursor: pointer;
+}
+
+.card .icon img {
+  width: 70px;
+}
+
+#i0 {
+  flex-basis: 100%;
+  border: none;
+  background-image: none;
+  margin-bottom: 20px;
+}
+
+#i0 .dayName {
+  font-size: 30px;
+}
+
+#i0 .date {
+  font-size: 16px;
+}
+
+/**Desktop Query*/
+@media only screen and (min-width: 768px) {
+  .card .dayName {
+    font-size: 35px;
+  }
+  .current .temp,
+  .current span {
+    font-size: 40px;
+  }
+  .current .weather {
+    font-size: 32px;
+  }
+}
+
+/*Tablet Query*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .card .dayName {
+    font-size: 24px;
+  }
+  .current .temp,
+  .current span {
+    font-size: 30px;
+  }
+  .current .weather {
+    font-size: 23px;
+  }
+  .current .hi-low,
+  .current .hi-low span {
+    font-size: 18px;
+  }
+  .card .date {
+    font-size: 15px;
+  }
+}
+
+/*Mobile Query*/
+@media only screen and (max-width: 480px) {
+  .card .dayName {
+    font-size: 16px;
+  }
+  .current .temp,
+  .current span {
+    font-size: 20px;
+  }
+  .current .weather {
+    font-size: 16px;
+  }
+  .current .hi-low,
+  .current .hi-low span {
+    font-size: 12px;
+  }
+  .card .date {
+    font-size: 8px;
+  }
+}
