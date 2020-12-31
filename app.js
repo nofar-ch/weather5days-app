@@ -31,9 +31,9 @@ function getResult(query) {
 function displayResult(weather) {
     dayCards.innerHTML = "";
     let index = 0;
+    
     for (let i = 0; i < weather.list.length; i = i+8) {
     let item = weather.list[i];
-        console.log(item)
         let city = document.querySelector('.location .city');
 
         const day = new Date();
