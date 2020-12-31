@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "montserrat", cursive;
+  font-family: cursive;
   background-image: url("./images/cloudsImage.jpg");
   background-size: cover;
   background-position: top center;
@@ -126,13 +126,12 @@ header input:focus {
 }
 .celFerCon {
   text-align: center;
-  margin-top: 20px;
 }
 .celFerCon .celFer {
   background-color: rgb(43, 39, 39);
   color: white;
   padding: 1% 2.5%;
-  margin: 80px;
+  margin: 40px;
   cursor: pointer;
   font-size: 18px;
   border-radius: 40px;
@@ -162,7 +161,7 @@ header input:focus {
 }
 
 #i0 .date {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /**Desktop Query*/
