@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: auto;
   padding: 0;
   box-sizing: border-box;
 }
@@ -28,32 +28,51 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 
 section .city {
   margin-top: 30px;
+  color: rgb(239, 255, 232);
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 2px;
+  padding-bottom: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  max-width: 300px;
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.616);
+  border-radius: 16px 0px 16px 0px;
+  border-bottom: 3px solid rgb(1, 202, 18);
+  transition: 0.2s ease-out;
 }
 
 header input {
   width: 100%;
-  max-width: 280px;
-  padding: 10px 15px;
-  margin-top: 40px;
-  border: none;
-  outline: none;
+  padding: 10px 20px;
   background-color: rgba(255, 255, 255, 0.616);
   border-radius: 16px 0px 16px 0px;
-  border-bottom: 3px solid rgb(1, 202, 18);
   color: #313131;
+  border: none;
+  outline: none;
   font-size: 20px;
   font-weight: 300;
-  transition: 0.2s ease-out;
 }
 
 header input:focus {
   background-color: rgb(224, 224, 224);
 }
 
+header img {
+  width: 45px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 8px;
+  cursor: pointer;
+}
 .day-cards {
   width: 100%;
   display: flex;
@@ -75,15 +94,6 @@ header input:focus {
   border-radius: 16px;
   padding: 1% 1%;
   margin-bottom: 5px;
-}
-
-.location .city {
-  color: rgb(239, 255, 232);
-  font-size: 30px;
-  font-weight: 700;
-  margin-bottom: 2px;
-  padding-bottom: 5px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .card .date,

@@ -4,21 +4,27 @@ const api = {
 }
 
 const searchbox = document.querySelector('.search-box');
+const searchIcon = document.querySelector('header img');
 searchbox.addEventListener('keypress', setQuery);
+searchIcon.addEventListener('click', setQuery)
 
 const hilow = document.querySelector('.day-card .hi-low');
 const temp = document.querySelector('.day-card .current .temp');
 const dayCards = document.querySelector('.day-cards');
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
+
 let sign = 'C';
 const DAYS_NUM = 7;
 
 function setQuery(e) {
+    const input = searchbox.value.replace(/\s/g, "").length > 0;
     // Enter button
-    if(e.keyCode === 13) {
+    if(e.keyCode === 13 && input) 
         getResult(searchbox.value)
-    }
+    // Mouse event
+    else if(e.type === 'click' && input)
+        getResult(searchbox.value)
 }
 
 function getResult(query) { 
