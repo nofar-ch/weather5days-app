@@ -7,5 +7,5 @@ Using https://openweathermap.org/ site for weather api.<br/>
 
 Link to mt app: https://nofar-ch.github.io/weather5days-app/<br/>
 
-<kbd><img src="images/view.PNG" height="350"></kbd>
+<kbd><img src="images/viewApp.PNG" height="350"></kbd>
 
